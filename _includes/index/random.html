@@ -1,7 +1,6 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 <script type="text/javascript">
-
 	function createDiv(className, content) {
 		var temp = document.createElement('div');
 		temp.className = className;
@@ -19,11 +18,9 @@
 		button.append(innerDiv);
 		return button;
 	}
-
 	function createJokeUnit(jokeText, jokeID) {
 		var jokeTextDiv = createDiv('joke-text', "");
 		jokeTextDiv.innerHTML += jokeText;
-		
 		
 		var jokeButtonShareDiv = createButton("", 'joke-share', 'share', 'Share');
 		var jokeButtonLinkDiv = createButton(jokeID, 'joke-link', 'link', 'Permalink');
@@ -37,29 +34,32 @@
 		jokeUnitDiv.append(jokeButtonsDiv);
 		jokeUnitDiv.innerHTML += '<hr>';
 		
-		return jokeUnitDiv;
-			
+		return jokeUnitDiv;		
 	}
-	
-	function generateRandomJokes(numberOfJokes) {
-	  $.getJSON("/search.json", function(data, traditional) {
-		var jokesLength = data.length;
-		var jokes = data;
-		var usedRandomIndex = [];
-		var divRandomPosts = $(".joke-lockup");
-		
-		while (numberOfJokes > 0) {
-		  var randomIndex = Math.floor(Math.random() * jokesLength);
-		  if (usedRandomIndex.indexOf(randomIndex) == "-1") {
-			divRandomPosts.append(createJokeUnit(jokes[randomIndex].text, randomIndex));
-			usedRandomIndex.push(randomIndex);
-			numberOfJokes--;
-		  }
+	function generateRandomJokes(numberOfJokes, type) {
+	  $.getJSON("/search.json", function(data) {
+		var jokes;
+		switch(type) {
+			case -1:
+				jokes = data[0].concat(data[1]);
+				break;
+			case 0:
+				jokes = data[type];
+				break;
+			case 1:
+				jokes = data[type];
+				break;
 		}
+		var	jokesLength = jokes.length;
 		
+		var divRandomJokes = $(".joke-lockup");
+		while (numberOfJokes > 0) {
+			var randomIndex = Math.floor(Math.random() * jokesLength);
+			divRandomJokes.append(createJokeUnit(jokes[randomIndex].text, randomIndex));
+			jokes.splice(randomIndex, 1);
+			numberOfJokes--;
+			jokesLength--;
+		}
 	  });
 	}
-
-	
-
 </script>
