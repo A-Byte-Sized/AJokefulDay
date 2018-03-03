@@ -1,9 +1,18 @@
 ---
 layout: default
+title: 404
+permalink: /404/
 ---
 <div class="error-bar">
 	<div class="error container"><br><br>
 		<strong>404 Error</strong><br>
-		The requested page could not be found.
+		The requested page could not be found.<br><br>
+		
+		Current pages:<br><br>
+
+		{% for page in site.pages %}
+			<a href="{{ page.url }}">{{ page.title }}</a><br>
+		{% endfor %}
+
 	</div>
 </div>
