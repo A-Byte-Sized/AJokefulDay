@@ -2,7 +2,10 @@
 # General Site Settings
 
 title: A Jokeful Day
-description: A Jokeful Day is dedicated to providing a little bit of sunshine to your day by providing the best and worst jokes around. With hundreds of jokes in our database, enjoy the never-ending new content.
+description: |
+ A Jokeful Day is dedicated to providing a little bit of sunshine to your day by providing the best and worst jokes around. With hundreds of jokes in our database, enjoy the never-ending new content.<br><br>
+ This webpage is done by <a href="http://JessicaSchlesiger.ml">Jessica Schlesiger</a>.<br><br>
+ A Jokeful Day does not claim any rights to the listed jokes; the sources for the jokes range anywhere from candy wrappers to somewhere on the internet.
 logo: logo.png
 icon: icon.png
 
