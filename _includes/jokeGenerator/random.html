@@ -37,7 +37,7 @@
 		return jokeUnitDiv;		
 	}
 	function generateRandomJokes(numberOfJokes, type) {
-	  $.getJSON("/search.json", function(data) {
+	  $.getJSON("/compile-jokes.json", function(data) {
 		var jokes;
 		switch(type) {
 			case -1:
