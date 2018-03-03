@@ -41,6 +41,7 @@
 		var jokes;
 		switch(type) {
 			case -1:
+				HTMLCollection.prototype.concat = Array.prototype.concat;
 				jokes = data[0].concat(data[1]);
 				break;
 			case 0:
