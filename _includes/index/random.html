@@ -1,0 +1,65 @@
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<script type="text/javascript">
+
+	function createDiv(className, content) {
+		var temp = document.createElement('div');
+		temp.className = className;
+		temp.append(content);
+		return temp;
+	}
+	function createButton(url, className, icon, text) {
+		var innerDiv = document.createElement('div');
+		innerDiv.className = className;
+		innerDiv.innerHTML += '<b class="icon-'+icon+'"></b> '+text;
+		
+		var button = document.createElement('a');
+		button.setAttribute('href', '/joke-num:'+url);
+		
+		button.append(innerDiv);
+		return button;
+	}
+
+	function createJokeUnit(jokeText, jokeID) {
+		var jokeTextDiv = createDiv('joke-text', "");
+		jokeTextDiv.innerHTML += jokeText;
+		
+		
+		var jokeButtonShareDiv = createButton("", 'joke-share', 'share', 'Share');
+		var jokeButtonLinkDiv = createButton(jokeID, 'joke-link', 'link', 'Permalink');
+		var jokeButtonRefreshDiv = createButton("", 'joke-refresh', 'refresh', 'Refresh')
+		
+		var jokeButtonsDiv = createDiv('joke-buttons', jokeButtonShareDiv);
+		jokeButtonsDiv.append(jokeButtonLinkDiv);
+		jokeButtonsDiv.append(jokeButtonRefreshDiv);
+		
+		var jokeUnitDiv = createDiv('joke-unit', jokeTextDiv);
+		jokeUnitDiv.append(jokeButtonsDiv);
+		jokeUnitDiv.innerHTML += '<hr>';
+		
+		return jokeUnitDiv;
+			
+	}
+	
+	function generateRandomJokes(numberOfJokes) {
+	  $.getJSON("/search.json", function(data, traditional) {
+		var jokesLength = data.length;
+		var jokes = data;
+		var usedRandomIndex = [];
+		var divRandomPosts = $(".joke-lockup");
+		
+		while (numberOfJokes > 0) {
+		  var randomIndex = Math.floor(Math.random() * jokesLength);
+		  if (usedRandomIndex.indexOf(randomIndex) == "-1") {
+			divRandomPosts.append(createJokeUnit(jokes[randomIndex].text, randomIndex));
+			usedRandomIndex.push(randomIndex);
+			numberOfJokes--;
+		  }
+		}
+		
+	  });
+	}
+
+	
+
+</script>

@@ -1,0 +1,23 @@
+---
+---
+@import '1-tools/-tools-dir'
+
+// ---- Image paths to SASS variables ---- //
+$logo-path: '{{ site.data.settings.logo }}'
+
+// --- Colors --- //
+$textColor: {{ site.data.settings.textColor }}
+
+$mainAccent: {{ site.data.settings.mainAccent }}
+$mainAccent-light: lighten($mainAccent, 15%)
+$mainAccent-dark: saturate(darken($mainAccent, 20%), 40%)
+
+$grayAccent: {{ site.data.settings.grayAccent }}
+$grayAccent-light: lighten($grayAccent, 25%)
+$grayAccent-dark: darken($grayAccent, 5%)
+
+$defaultPadding: 2%
+
+// --- Import all SASS --- //
+@import '2-base/-base-dir'
+@import '3-sections/-sections-dir'

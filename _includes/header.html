@@ -1,0 +1,12 @@
+<div class="header-bar">
+  <div class="header container">
+	<nav>
+	<a href="{{ site.github.url }}/"><img src="{{ site.github.url }}/assets/img/{{ site.data.settings.logo }}"></a>
+		<ul>
+			{% for item in site.data.settings.menu %}
+				<li><a href="{{ site.github.url }}{{ item.url }}">{{ item.name }}</a></li>
+			{% endfor %}
+		</ul>
+	</nav>
+  </div>
+</div>

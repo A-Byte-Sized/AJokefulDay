@@ -1,0 +1,17 @@
+---
+---
+[
+    {% for joke in site.data.jokes.joke-One-Liner %}
+    {
+      "text"    : "{{ joke.text }}"
+    }
+	{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+	,
+	{% for joke in site.data.jokes.joke-Traditional %}
+    {
+      "text"    : "{{ joke.text }}"
+    }
+    {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+]
