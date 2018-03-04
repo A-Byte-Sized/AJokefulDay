@@ -19,6 +19,25 @@ joke-One-Liner:
  - {text: "A limbo champion walks into a bar. They are disqualified."}
  - {text: "A man is washing the car with his son. The son asks, 'Dad, can't you just use a sponge?'"}
  - {text: "I used to have two kidneys. Then I grew up. Now I have two adult knees."}
+ - {text: "I remember a guy who was addicted to brake fluids. He said he could stop any time."}
+ - {text: "I was at an ATM and this old lady asked me to help check her balance. So I pushed her over."}
+ - {text: "When the iron was invented there was a press conference."}
+ - {text: "When the glassblower inhaled he got a pane in the stomach."}
+ - {text: "Radioactive cats have 18 half-lives."}
+ - {text: "When a clock is hungry, does it go back four seconds?"}
+ - {text: "When ceiling fans were invented, they were considered revolutionary."}
+ - {text: "Two silk worms were in a race, they ended up in a tie."}
+ - {text: "Two cannibals are eating a clown. One says to the other: 'Does this Taste funny to you?'"}
+ - {text: "Cartoonist found dead in home. Details are sketchy."}
+ - {text: "I know a rancher who has 100 head of cattle, but he thought there were only 99 until he rounded them up."}
+ - {text: "As the shoe said to the hat, 'You go on ahead, and I'll follow on foot.'"}
+ - {text: "If you don’t pay your exorcist you can get repossessed."}
+ - {text: "The man put his name on the neck of his shirt so he would have collar ID."}
+ - {text: "To write with a broken pencil is pointless."}
+ - {text: "Stealing someone’s coffee is called ’mugging.’"}
+ - {text: "The dead batteries were given out free of charge."}
+ - {text: "Eating clocks is time consuming."}
+ - {text: "It made a belt out of watches. It was a waist of time."}
  
 joke-Traditional:
  - {text: "Why is Peter Pan always flying?<br><br>He Never Lands."}
@@ -33,8 +52,16 @@ joke-Traditional:
  - {text: "How do you make holy water?<br><br>You boil the hell out of it."}
  - {text: "Why do seagulls fly over the sea?<br><br>Because if they flew over the bay, they'd be bagels."}
  - {text: "Where do cows go to dance?<br><br>A meat ball."}
- - {text: "Why did the scarecrow get a promotion?<br><br>He was outstanding in his field.", tag: "Traditional"}
- - {text: "What do you call a cow with no legs?<br><br>Ground beef.", tag: "Traditional"}
- - {text: "What's blue and smells like red paint?<br><br>Blue paint.", tag: "Traditional"}
- - {text: "What happened to the cow when it jumped over the barb wire fence?<br><br>Udder destruction!", tag: "Traditional"}
+ - {text: "Why did the scarecrow get a promotion?<br><br>He was outstanding in his field."}
+ - {text: "What do you call a cow with no legs?<br><br>Ground beef."}
+ - {text: "What's blue and smells like red paint?<br><br>Blue paint."}
+ - {text: "What happened to the cow when it jumped over the barb wire fence?<br><br>Udder destruction!"}
+ - {text: "If attacked by a mob of clowns.<br><br>Go for the juggler!"}
+ - {text: "What do you call cheese that isn't yours?<br><br>Nacho cheese."}
+ - {text: "What lies at the bottom of the ocean and twitches?<br><br>A nervous wreck."}
+ - {text: "Did you hear about the guy whose whole left side was cut off?<br><br>He's all right now."}
+ - {text: "What did the ocean say to the beach?<br><br>Nothing, it just waved."}
+ - {text: "What's the difference between a bad golfer and a bad skydiver?<br><br>One goes <i>WHACK</i> 'Damn.' and the other goes 'Damn.' <i>WHACK</i>"}
+ - {text: "Did you hear about the guy who stole a calendar?<br><br>He got 12 months, they say his days are numbered."}
+
  

@@ -16,5 +16,6 @@ textColor: "#292929"
 
 # Navigation
 menu:
+- {name: All, url: '/'}
 - {name: One-liner, url: '/one-liner/'}
 - {name: Traditional, url: '/traditional/'}
