@@ -38,6 +38,7 @@ joke-One-Liner:
  - {text: "The dead batteries were given out free of charge."}
  - {text: "Eating clocks is time consuming."}
  - {text: "It made a belt out of watches. It was a waist of time."}
+ - {text: "If attacked by a mob of clowns, go for the juggler!"}
  
 joke-Traditional:
  - {text: "Why is Peter Pan always flying?<br><br>He Never Lands."}
@@ -56,7 +57,6 @@ joke-Traditional:
  - {text: "What do you call a cow with no legs?<br><br>Ground beef."}
  - {text: "What's blue and smells like red paint?<br><br>Blue paint."}
  - {text: "What happened to the cow when it jumped over the barb wire fence?<br><br>Udder destruction!"}
- - {text: "If attacked by a mob of clowns.<br><br>Go for the juggler!"}
  - {text: "What do you call cheese that isn't yours?<br><br>Nacho cheese."}
  - {text: "What lies at the bottom of the ocean and twitches?<br><br>A nervous wreck."}
  - {text: "Did you hear about the guy whose whole left side was cut off?<br><br>He's all right now."}

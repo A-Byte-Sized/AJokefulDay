@@ -15,7 +15,11 @@ grayAccent: "#ebebeb"
 textColor: "#292929"
 
 # Navigation
-menu:
+header:
 - {name: All, url: '/'}
 - {name: One-liner, url: '/one-liner'}
 - {name: Traditional, url: '/traditional'}
+footer:
+- {name: About, url: '/'}
+- {name: Contact, url: '/one-liner'}
+- {name: Submit a joke, url: '/traditional'}
