@@ -13,7 +13,7 @@
 		innerDiv.innerHTML += '<b class="icon-'+icon+'"></b> '+text;
 		
 		var button = document.createElement('a');
-		button.setAttribute('href', "/"+url);
+		button.setAttribute('href', url);
 		
 		button.append(innerDiv);
 		return button;
@@ -24,7 +24,7 @@
 		
 		var jokeButtonShareDiv = createButton("", 'joke-share', 'share', 'Share');
 		var jokeButtonLinkDiv = createButton(jokeID, 'joke-link', 'link', 'Permalink');
-		var jokeButtonRefreshDiv = createButton("", 'joke-refresh', 'refresh', 'Refresh')
+		var jokeButtonRefreshDiv = createButton("javascript:location.reload();", 'joke-refresh', 'refresh', 'Refresh')
 		
 		var jokeButtonsDiv = createDiv('joke-buttons', jokeButtonShareDiv);
 		jokeButtonsDiv.append(jokeButtonLinkDiv);
