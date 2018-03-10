@@ -1,0 +1,19 @@
+---
+layout: default
+title: Submit A Joke
+permalink: /submit-a-joke
+---
+<div class="submit-bar">
+	<div class="submit container"><br><br><br>
+		<center>All jokes will be reviewed to ensure no repetition and appropriateness for the site.</center>
+		<div class="contact-form">
+			<form method="POST" action="//formspree.io/{{ site.data.settings.email }}">
+			  <label><span>Joke:</span>
+			  <textarea name="joke"></textarea></label>
+			  <fieldset class="submit-wrap">
+				<input type="submit" value="Send">
+			  </fieldset>
+			</form>
+		</div>
+	</div>
+</div>

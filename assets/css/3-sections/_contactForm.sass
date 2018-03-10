@@ -1,0 +1,60 @@
+form
+	max-width: 800px
+	margin: 40px auto 20px auto
+	input, textarea
+		background-color: $grayAccent
+		border-radius: 5px
+		border: 1px solid $grayAccent-dark
+		width: 100%
+		+box-sizing(border-box)
+		padding: 10px
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
+	&:focus
+		outline: none
+		border-color: $mainAccent-dark
+	textarea
+		height: 10em
+		resize: none
+.submit-wrap
+	border: none
+	text-align: right
+	margin-right: 0px
+	[type="submit"]
+		border: none
+		padding: 10px
+		background: $mainAccent
+		font-weight: bold
+		color: $textColor
+		font-size: 18px
+		width: 33%
+		+transition
+		&:hover
+			background: $mainAccent-light
+fieldset
+	padding: 0 
+.contact-info-group
+	border: none
+	label
+		display: block
+		margin-bottom: 20px
+		width: 50%
+		float: left
+		+box-sizing(border-box)
+		&:nth-child(1)
+			padding-right: 10px
+
+		&:nth-child(2)
+			padding-left: 10px
+	span
+		display: block
+@media (max-width: 541px)
+	form
+		.contact-info-group
+			label
+				width: 100%
+				&:nth-child(1)
+					padding: 0px
+				&:nth-child(2)
+					padding: 0px

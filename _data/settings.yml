@@ -8,6 +8,7 @@ description: |
  A Jokeful Day does not claim any rights to the listed jokes; the sources for the jokes range anywhere from candy wrappers to somewhere on the internet.
 logo: logo.png
 icon: icon.png
+email: Jessica.Schlesiger@gmail.com
 
 # Colors
 mainAccent: "#ffc955"
@@ -20,6 +21,6 @@ header:
 - {name: One-liner, url: '/one-liner'}
 - {name: Traditional, url: '/traditional'}
 footer:
-- {name: About, url: '/'}
-- {name: Contact, url: '/one-liner'}
-- {name: Submit a joke, url: '/traditional'}
+- {name: About, url: '/about'}
+- {name: Contact, url: '/contact'}
+- {name: Submit a joke, url: '/submit-a-joke'}
