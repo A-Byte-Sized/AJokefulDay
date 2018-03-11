@@ -1,16 +1,18 @@
 ---
 layout: default
 ---
-{% include jokeGenerator/random.html %}
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="{{ site.github.url }}/assets/js/randomJokeBox.js"></script>
 <div class="content-bar">
 	<div class="content container">
 		<div class="content-forceCenterOuter">
 			<div class="content-forceCenterInner">
 				<div class="joke-lockup">	
+					<noscript><h1>This content is generated using Javascript. Please enable it in order to see the content.</h1></noscript>
 					{{ content }}
 				</div>
 				<div class="show-options">
-					Show: 1, <a href="/show-5">5</a>, <a href="/show-10">10</a>, <a href="/show-all">All</a>.
+					Show: 1, <a href="{{ site.github.url }}{{ page.permalink }}show-2">2</a>, <a href="{{ site.github.url }}{{ page.permalink }}show-5">5</a>, <a href="{{ site.github.url }}{{ page.permalink }}show-10">10</a>.
 				</div>
 			</div>
 		</div>
