@@ -2,7 +2,7 @@ markdown: kramdown
 sass:
   sass_dir: assets/css
   style: compressed
- compress_html:
+compress_html:
   clippings: all
   comments: all
   endings: all
