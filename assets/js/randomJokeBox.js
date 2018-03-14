@@ -46,8 +46,8 @@ function generateRandomJokes(numberOfJokes, type) {
 	}
 }
 function grabValidJokes(type) {
-	var oneLiner={{ site.data.jokes.one-Liner | jsonify }};
-	var traditional={{ site.data.jokes.traditional | jsonify }};
+	var oneLiner={{ site.data.one-liner | jsonify }};
+	var traditional={{ site.data.traditional | jsonify }};
 	var jokes;
 	switch(type) {
 		case -1:
