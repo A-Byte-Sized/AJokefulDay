@@ -21,7 +21,7 @@ function createJokeUnit(jokeText, jokeID) {
 	var jokeTextDiv = createDiv('joke-text', "");
 	jokeTextDiv.innerHTML += jokeText;
 	
-	var jokeButtonShareDiv = createButton("", 'joke-share', 'share', 'Share');
+	var jokeButtonShareDiv = createButton("http://twitter.com/share?text="+jokeText.replace(new RegExp('<br>', 'g')," ")+"&url=http://ajokefulday.ml/&hashtags=ajokefulday,bestcornyjokes", 'joke-share', 'share', 'Share');
 	var jokeButtonRefreshDiv = createButton("javascript:location.reload();", 'joke-refresh', 'refresh', 'Refresh')
 	
 	var jokeButtonsDiv = createDiv('joke-buttons', jokeButtonShareDiv);
