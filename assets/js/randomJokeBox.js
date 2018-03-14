@@ -29,7 +29,6 @@ function createJokeUnit(jokeText, jokeID) {
 	
 	var jokeUnitDiv = createDiv('joke-unit', jokeTextDiv);
 	jokeUnitDiv.append(jokeButtonsDiv);
-	jokeUnitDiv.innerHTML += '<hr>';
 	
 	return jokeUnitDiv;		
 }
